@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(180, 180, 197, 0.8),
+      rgba(65, 65, 72, 0.8)
+    ),
+    url(background.png);
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fafafa;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 5px;
+  height: 720px;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #135d80;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: "";
+  width: 15px;
+  height: 4px;
+  border-radius: 4px;
+  background: #135d80;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.input-field i {
+  margin-left: 15px;
+  color: #999;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 0.5s; 
+}
+
+.input-field input[type="file"] {
+    width: 100%;
+    padding: 18px 15px;
+}
+
+.input-field i.fa-file-alt {
+    margin-left: 15px;
+    color: #999;
+}
+
+.input-group {
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.btn-field {
+    display: flex;
+    justify-content: center; 
+    margin-top: 12px; 
+}
+
+.btn-field button {
+    background: #135d80;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+    width: 150px; 
+}
+
+.btn-field button:hover {
+    background: #0d45a5;
+}
+
+.input-field .cv-label {
+    margin-left: 15px;
+    color: #777;
+    font-size: 14px; 
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #135d80;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+
+  .input-field .cv-label i,
+.input-field i.fa-solid {
+    margin-right: 8px;
+    color: #999;
+    transition: color 0.3s; 
+}
+
+.input-field:hover .cv-label i,
+.input-field:hover i.fa-solid {
+    color: #0d45a5;
+}
+
+.input-group {
+    margin-top: -25px; 
+}
+
+.form-box h1:hover {
+    color: #0d45a5; /* Change text color on hover */
+}
+
